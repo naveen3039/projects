@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibm details add</title>
+    <link rel='stylesheet' type='text/css' href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class="navbar">
+      <a class="active" href="{{url}}loginsuccess"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="{{url}}ibm"> IBM</a>
+      <a href="{{url}}logout" ><i class="button"></i> Logout</a>
+    </div>
+    <h2>Update Ibm details</h2>
+    <h1 align ="right">
+        <form action="{{url}}/resource" method="POST" >
+         <input type = "text" name = "EMPID" placeholder="Search Employee " pattern="[0-9]+" title="Enter only integers">
+         <input type="submit" value="search">
+        </form></h1>
+    <form action="{{url}}/resource" method="POST" >
+        <input type = "text" name = "EMPID" placeholder="Search Employee " pattern="[0-9]+" title="Enter only integers">
+        <input type="submit" value="search">
+       </form></h3>
+    <a href="{{url}}add" >Click here to add resources</a> <br>
+    <a href="{{url}}view" >Click Here To View Resources Details of Infinite</a> <br>
+    <a href="{{url}}viewresource">Click Here To View Details With Employee Id</a> <br>    
+    <a href="{{url}}update" >Click here to update resources</a> <br>
+    <a href="{{url}}delete" >Click here to delete resources</a> <br>
+    <a href="{{url}}change" >Click here to Change Password</a> <br>       
+    <form action="{{url}}ibmdetails" method="POST">
+    <p>INFINITE EmployeeID <input type ="text" name="id"  placeholder="Employee id for infinite" pattern="[0-9]+" title="Enter only integers" required> </p>
+    <p>IBM_Laptop_Status <select name="IBM_Laptop_Status">
+        <option value="">Select</option>
+        <option value="True">Yes</option>
+        <option value="">No</option>
+    </select></p>
+    <p>Position_in_IBM <input type = "text" name = "Position_in_IBM"  placeholder="Position_in_IBM"/></p><br>
+    <p>IBM_EMPLOYEE_ID <input type = "text" name = "IBM_EMP_ID" value="0" placeholder="IBM_EMPLOYEE_ID" pattern="[0-9]+" title="Enter only integers" ></p><br>
+    <p>IBM_Mail_ID <input type = "email" name = "IBM_Mail_ID" placeholder="IBM_Mail_ID" pattern="[A-Za-z]+.[A-Za-z0-9]+@[a-z]+.[a-z]+" title="Enter in email format only"/></p><br>
+    <p>IBM_Manager <input type = "text" name = "IBM_Manager" placeholder="IBM_Manager" /></p><br>
+    <input type="submit" value="add">
+    </form>
+</body>
+</html>

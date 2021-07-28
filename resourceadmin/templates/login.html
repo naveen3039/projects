@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+</head>
+<body>
+    <h1>BIZX for Admin</h1>
+    <form action={{url}}login method="POST">
+        <p>email<input type="email" name=email placeholder="email" required><br>
+           Password <input type ="password" name=password   placeholder="password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" title="Enter Minimum eight characters, at least one uppercase letter, one lowercase letter , one special character  and one number" required><br>
+           <input type="submit" value = "login">
+    </form>
+    <a href="{{url}}reset" method = POST>click here to reset password</a>
+    <form action={{url}}reg method="POST">
+        <p>Don't Have Account click here to register</p>
+        <input type="submit" value = "register">
+     </form>
+</body>
+</html>

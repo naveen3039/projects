@@ -1,0 +1,13 @@
+INFO:root:input given as entered 5
+INFO:root:it is in for loop i=0 
+INFO:root:it is in for loop total=0 
+INFO:root:it is in for loop i=1 
+INFO:root:it is in for loop total=0 
+INFO:root:it is in for loop i=2 
+INFO:root:it is in for loop total=0 
+INFO:root:it is in for loop i=3 
+INFO:root:it is in for loop total=0 
+INFO:root:it is in for loop i=4 
+INFO:root:it is in for loop total=0 
+INFO:root:it is in for loop i=5 
+INFO:root:it is in for loop total=0 

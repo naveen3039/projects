@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Details</title>
+    <link rel='stylesheet' type='text/css' href="{{url_for('static', filename='style.css')}}">
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body>
+    <div class="navbar">
+      <a class="active" href="{{url}}loginsuccess"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="{{url}}ibm"> IBM</a>
+      <a href="{{url}}logout" ><i class="button"></i> Logout</a>
+    </div> 
+    <h2>View details of resources :</h2>
+    <h1 align ="right">
+        <form action="{{url}}/resource" method="POST" >
+         <input type = "text" name = "EMPID" placeholder="Search Employee " pattern="[0-9]+" title="Enter only integers">
+         <input type="submit" value="search">
+        </form></h1>
+    <a href="{{url}}add" >Click here to add resources</a> <br>
+    <a href="{{url}}viewibm" >Click Here To View Resources Details of ibm</a> <br>    
+    <a href="{{url}}viewresource">Click Here To View Details With Employee Id</a> <br>    
+    <a href="{{url}}update" >Click here to update resources</a> <br>
+    <a href="{{url}}delete" >Click here to delete resources</a> <br>
+    <a href="{{url}}change" >Click here to Change Password</a> <br>    
+    <table style="margin-left: 20px;">
+        <tr> 
+            <tr style="color: black;">
+                <th>Sno.</th>
+                <th>Employee ID</th> 
+                <th>Name </th> 
+                <th>Email </th> 
+                <th>Job_Grade </th> 
+                <th>Designation_in_Infinite </th> 
+                <th>Status </th>
+                <th>Date of Joining Infinite </th> 
+                <th>Last working Day </th> 
+                <th>Employee Location </th> 
+                <th>PO_no </th> 
+                <th>PO_start_date </th> 
+                <th>PO_end_date </th> 
+                <th>Account_manager </th> 
+                <th>Experience </th> 
+                <th>Per_day_rate_dollar </th>
+                <th>Per_day_rate_INR </th> 
+                <th>CTC in INR </th> 
+                <th>CTC in_dollar </th> 
+                <th>GM_Percent </th> 
+                <th>Actual_billing_date </th> 
+                <th>Mobile_Number </th> 
+                <th>Under_taking_letter</th>
+                <th>Skill_set </th>
+                <th>Laptop_received_date </th> 
+                <th>Address </th>   
+                <th>Ibm Status</th>
+                <th>Modified by
+                    (Admin Email)
+                </th>
+            </tr>
+        </tr>
+    {% set count = namespace(value=1) %}
+    {% for details in query %}
+        <tr> 
+            <td>
+                {{ count.value }}
+                {% set count.value = count.value + 1 %}
+            </td>       
+            <td>
+                {{details.emp_id}}
+            </td>
+            <td>
+                {{details.name}}
+            </td>
+            <td>
+                {{details.email_id}}
+            </td>
+            <td>
+                {{details.job_grade}}
+            </td>
+            <td>
+                {{details.designation_in_infinite}}
+            </td>
+            <td>
+                {% if details.status == True %}
+                    Active
+                {% else %}
+                    InActive
+                {%endif%}
+            </td>
+            <td>
+                {{details.date_of_joining_infinite}}
+            </td>
+            <td>
+                {{details.last_working_date}}
+            </td>
+            <td>
+                {{details.emp_location}}
+            </td>
+            <td>
+                {{details.po_no}}
+            </td>
+            <td>
+                {{details.po_start_date}}
+            </td>
+            <td>
+                {{details.po_end_date}}
+            </td>
+            <td>
+                {{details.account_manager}}
+            </td>
+            <td>
+                {{details.experience}}
+            </td>
+            <td>
+                {{details.per_day_rate_dollars}}
+            </td>
+            <td>
+                {{details.per_day_rate_INR}}
+            </td>
+            <td>
+                {{details.ctc}}
+            </td>
+            <td>
+                {{details.ctc_in_dollars}}
+            </td>
+            <td>
+                {{details.gm_perctange}}
+            </td>
+            <td>
+                {{details.actual_billing_date}}
+            </td>
+            <td>
+                {{details.mobile_Number}}
+            </td>
+            <td>
+                {% if details.under_taking_letter == True %}
+                    Taken
+                {% else %}
+                    Not Taken
+                {%endif%}
+            </td>
+            <td>
+                {{details.skill_set}}
+            </td>
+            <td>
+                {{details.laptop_received_date}}
+            </td>
+            <td>
+                {{details.address}}
+            </td>
+            <td>
+                {% if details.ibm_status == True %}
+                    Selected
+                {% else %}
+                    Not Selected
+                {%endif%}
+            </td>
+            <td>
+                {{details.admin_email}}
+            </td> 
+        </tr>
+    {% endfor %}
+    </table>

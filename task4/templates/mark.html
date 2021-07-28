@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mark</title>
+</head>
+<body>
+    <form action = "http://127.0.0.1:5004/mark" method="POST">
+        <p>WELCOME {{user.upper()}}</p>
+        <p>GIVE TITLE OF ITEM WHICH TASK IS COMPLETED</p>
+        <input type="hidden" name = "user" value = {{user}}>
+        title:<input type="text" name="title"required><br>
+        <input type="submit" value = "submit">
+    </form>    
+</body>
+</html>

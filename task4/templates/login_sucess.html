@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN SUCCESS</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:5004/option" method="POST">
+        <p>WELCOME {{user.upper()}}</p>
+        {% if 'THERE' in name %}
+            <p>{{name}}</p>
+        {% else %}
+            {% for i in name %}
+                <p>VIEWING ITEMS OF {{user.upper()}} </p>
+                {% for key,value in i.items() %}
+                    <p>{{key}} = {{value}}</p>
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+        <br>
+        choose a option  for :<select name ="option">
+                            <option value = 'create'>create</option>
+                            <option value = 'update'>update</option>
+                            <option value = "delete">delete</option>
+                            <option value = "mark"> mark </option>
+                         </select> 
+                         <br>
+                         <input type="submit" value ="submit">  
+        <input type="hidden" name = "user" value = {{user}}>
+    </form>
+    <form action="http://127.0.0.1:5004/" method="POST">
+        <br>
+        <br>
+        <input type = "submit" value="logout">
+    </form>
+</body>
+</html>

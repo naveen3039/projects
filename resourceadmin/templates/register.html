@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register page</title>
+</head>
+<body>
+    <h1>Registeration for Admin</h1>
+    <form action="{{url}}register", method="POST">
+        <p> email <input text ="email" name = "email" placeholder="email" pattern="[A-Za-z]+.[A-Za-z0-9]+@[a-z]+.[a-z]+" title="Enter in email format only"required><br>
+        username<input text="text" name="user" placeholder="username" required><br>
+        password <input text="password" name="password" placeholder="password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" title="Enter Minimum eight characters, at least one uppercase letter, one lowercase letter, one special character and one number" required><br>
+        conform password <input text="password" name="cpassword" placeholder="conform password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" title="Enter Minimum eight characters, at least one uppercase letter, one lowercase letter, one special character and one number" required><br>
+        <input type="submit" value = "register"><br>
+        if u registered
+        <a href={{url}} > Press here for login</a>
+        </p>
+    </form>
+</body>
+</html>

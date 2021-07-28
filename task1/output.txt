@@ -1,0 +1,2 @@
+count of records greater than 5000:3
+sum of records greater than 5000:690930

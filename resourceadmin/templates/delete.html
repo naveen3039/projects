@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href="{{url_for('static', filename='style.css')}}">
+    <title>Delete resources</title>
+</head>
+<body>
+  <div class="navbar">
+    <a class="active" href="{{url}}loginsuccess"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="{{url}}ibm"> IBM</a>
+    <a href="{{url}}logout" ><i class="button"></i> Logout</a>
+ </div>
+ <br>
+ <h2>Delete a resource data</h2>
+ <h1 align ="right">
+  <form action="{{url}}/resource" method="POST" >
+   <input type = "text" name = "EMPID" placeholder="Search Employee " pattern="[0-9]+" title="Enter only integers">
+   <input type="submit" value="search">
+  </form></h1>
+ <form action="{{url}}deletedetails" method="POST">
+     Infinite Employee Id<input type="text" name = "EMPID" placeholder="infinite employeeid"  pattern="[0-9]+" title="Enter only integers">
+     <input type="submit" value="delete">
+ </form>
+ <a href="{{url}}add" >Click here to add resources</a> <br>
+<a href="{{url}}view" >Click Here To View Resources Details of Infinite</a> <br>
+<a href="{{url}}viewibm" >Click Here To View Resources Details of ibm</a> <br>    
+<a href="{{url}}viewresource">Click Here To View Details With Employee Id</a> <br>    
+<a href="{{url}}update" >Click here to update resources</a> <br>
+<a href="{{url}}change" >Click here to Change Password</a> <br>     

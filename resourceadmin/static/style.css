@@ -1,0 +1,243 @@
+body{
+    margin:0;
+    padding:0;
+    background:url(196-1963020_website-backgrounds-website-login-page-background.jpg);
+    background-size: cover;
+    background-position:center;
+    font-family: sans-serif;
+    
+}
+.loginbox{
+    width:320px;
+    height:420px;
+    /* background: black; */
+    color:#fff;
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px -30px;
+}
+.image
+{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left:calc(50% - 50px);
+}
+.h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: absolute;
+    font-size: 22px;
+}
+.loginbox p{
+    margin: 0;
+    padding:0;
+    font-weight: bold;
+}
+.loginbox input{
+    width: 80%;
+    margin-bottom:20px;
+     
+}
+.loginbox input[type='text']
+{
+    border:none;
+    border-bottom:1px solid #fff;
+    background:transparent;
+    outline: none;
+    height:40px;
+    color:#fff;
+    border-radius:50px;
+    font-size:16px;
+}
+.loginbox input [type='submit']
+{
+    border: none;
+    outline: none;
+    height:40px;
+    background:#fb2525;
+    color:#fff;
+    font-size: 18px;
+    border-radius:50px;
+
+}
+
+.loginbox input[type='submit']:hover
+{
+    cursor:pointer;
+    background: #4d4c4a;
+    color:#000;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height:20px;
+    color:black;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height:20px;
+    color:black;
+}
+.reset h1{
+    color:blanchedalmond;
+    margin: 0;
+    top:50%;
+    left:40%;
+    padding: 0 0 20px;
+    text-align: absolute;
+    font-size: 22px;
+    position: relative;
+}
+.reset p{
+    left:40%;
+    font-size:18px;
+    position: relative;
+    color:blanchedalmond;
+    display: grid;
+    grid-auto-rows: 30px;
+    
+
+}
+.reset input[type='Email']{
+   
+    left:40%;
+    font-size: 14px;
+    position:center;
+   
+      
+}
+.reset input{
+    margin: 0;
+    top:70%;
+    left:40%;
+    text-align: absolute;
+    font-size: 14px;
+    position: relative;
+    
+   
+    
+}
+.reset h1{
+    color:blanchedalmond;
+    margin: 0;
+    top:50%;
+    left:40%;
+    padding: 0 0 20px;
+    text-align: absolute;
+    font-size: 22px;
+    position: relative;
+}
+.reset p{
+    left:40%;
+    font-size:18px;
+    position: relative;
+    color:blanchedalmond;
+    display: grid;
+    grid-auto-rows: 30px;
+    
+
+}
+.reset input[type='Email']{
+   
+    left:40%;
+    font-size: 14px;
+    position:center;
+   
+    
+    
+}
+.reset input{
+    margin: 0;
+    top:70%;
+    left:40%;
+    text-align: absolute;
+    font-size: 14px;
+    position: relative;
+    
+   
+    
+}
+.reset input[type='submit']{
+
+    left:45%;
+    text-align: absolute;
+    font-size: 14px;
+    position:relative;
+
+}
+.reset h1{
+    font-size: 40px;
+    color:black;
+}
+.reset p{
+    height:10px;
+    color:black;
+}
+
+.register h1{
+    color:azure;
+}
+.register p{
+    color:azure;
+}
+.register a{
+    color:black;
+}
+.register p a:hover{
+    
+    cursor:pointer;
+ }
+
+ .delete{
+    color: rgb(144, 156, 138);
+ }
+ .del-page{
+    color: rgb(126, 131, 124);
+    font-size:18px;
+
+ }
+ .ibm-tools{
+    color: rgb(160, 153, 142);
+
+ }
+ .navbar {
+    width: 100%;
+    background-color:white;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color:black;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color:dodgerblue;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #0a59c0;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }

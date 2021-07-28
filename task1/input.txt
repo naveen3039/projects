@@ -1,0 +1,12 @@
+unicomp6.unicomp.net -- [10/Oct/2000:13:55:36-0700] "GET/shuttle/countdown/ HTTP/1.0" 200 3985
+burger-letters.com -- [10/Oct/2000:13:55:37-0700] "GET/shuttle/countdown/liftoff.html HTTP/1.0" 304 0
+burger-letters.com -- [10/Oct/2000:13:55:38-0700] "GET images/xyz.jpg HTTP/1.0" 304 0
+burger-letters.com -- [10/Oct/2000:13:55:39-0700] "GET/shuttle/countdown/liftoff.html HTTP/1.0" 304 0
+burger-letters.com -- [10/Oct/2000:13:55:39-0700] "GET images/pqrst.jpg HTTP/1.0" 304 0
+unicomp6.unicomp.net -- [10/Oct/2000:13:55:40-0700] "GET/shuttle/countdown/abc.html HTTP/1.0" 200 40310
+unicomp6.unicomp.net -- [10/Oct/2000:13:55:40\-0700] "GET/shuttle/countdown/ HTTP/1.0" 200 4183
+unicomp6.unicomp.net -- [10/Oct/2000:13:55:41-0700] "GET/shuttle/countdown/nasa.html HTTP/1.0" 200 600310
+burger-letters.com -- [10/Oct/2000:13:55:42-0700] "GET images/lkg.jpg HTTP/1.0" 304 789
+burger-letters.com -- [10/Oct/2000:13:55:43-0700] "GET images/ukg.jpg HTTP/1.0" 304 1204
+unicomp6.unicomp.net -- [10/Oct/2000:13:55:44-0700] "GET /shuttle/countdown/abc.html HTTP/1.0" 200 50310
+burger-letters.com -- [10/Oct/2000:13:55:42-0700] "GET images/lgkg.jpg HTTP/1.0" 304 4998

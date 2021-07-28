@@ -1,0 +1,10 @@
+2021-05-23 00:04:35,211 ::  * Debugger is active!
+2021-05-23 00:04:35,213 ::  * Debugger PIN: 527-933-752
+2021-05-23 00:04:36,741 :: Database is connected
+2021-05-23 00:04:36,742 :: Cursor estabished in database
+2021-05-23 00:04:36,742 :: Fetched all data in table
+2021-05-23 00:04:36,743 :: 127.0.0.1 - - [23/May/2021 00:04:36] "GET /all HTTP/1.1" 200 -
+2021-05-23 00:05:20,014 :: Database is connected
+2021-05-23 00:05:20,017 :: Cursor estabished in database
+2021-05-23 00:05:20,018 :: Fetched all data in table
+2021-05-23 00:05:20,019 :: 127.0.0.1 - - [23/May/2021 00:05:20] "GET /all HTTP/1.1" 200 -

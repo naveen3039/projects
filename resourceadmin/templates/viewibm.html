@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View ibm Details </title>
+    <link rel='stylesheet' type='text/css' href="{{url_for('static', filename='style.css')}}">
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body>
+    <div class="navbar">
+      <a class="active" href="{{url}}loginsuccess"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="{{url}}ibm"> IBM</a>
+      <a href="{{url}}logout" ><i class="button"></i> Logout</a>
+    </div> 
+    <h1 align ="right">
+        <form action="{{url}}/resource" method="POST" >
+         <input type = "text" name = "EMPID" placeholder="Search Employee " pattern="[0-9]+" title="Enter only integers">
+         <input type="submit" value="search">
+        </form></h1>
+    <a href="{{url}}add" >Click here to add resources</a> <br>
+    <a href="{{url}}view" >Click Here To View Resources Details of Infinite</a> <br>
+    <a href="{{url}}viewresource">Click Here To View Details With Employee Id</a> <br>    
+    <a href="{{url}}update" >Click here to update resources</a> <br>
+    <a href="{{url}}delete" >Click here to delete resources</a> <br>
+    <a href="{{url}}change" >Click here to Change Password</a> <br> 
+    <h2>View  IBM details of resources :</h2>
+    <table style="margin-left: 20px;">
+        <tr> 
+            <tr style="color: black;">
+                <th>Sno.</th>
+                <th>Employee ID</th>
+                <th>Name </th> 
+                <th>Email </th> 
+                <th>Ibm Status</th>
+                <th>IBM Employee id</th>
+                <th>IBM Email</th>
+                <th> Ibm Laptop status </th>
+                <th>Position_in_IBM</th>
+                <th>Ibm Manager </th>
+                <th>Designation_in_Infinite </th> 
+                <th>Status </th>
+                <th>Date of Joining Infinite </th> 
+                <th>Employee Location </th> 
+                <th>Experience </th> 
+                <th>Mobile_Number </th> 
+                <th>Skill_set </th>
+                <th>Address </th>   
+                
+                <th>Modified by
+                    (Admin Email)
+                </th>
+            </tr>
+        </tr>
+    {% set count = namespace(value=1) %}
+    {% for details in query %}
+        <tr> 
+            <td>
+                {{ count.value }}
+                {% set count.value = count.value + 1 %}
+            </td>       
+            <td>
+                {{details.emp_id}}
+            </td>
+            <td>
+                {{details.name}}
+            </td>
+            <td>
+                {{details.email}}
+            </td>
+            <td>
+                {% if details.ibm_status == True %}
+                    Selected
+                {% else %}
+                    Not Selected
+                {%endif%}
+            </td>
+            <td>
+                {{details.ibm_emp_id}}
+            </td>
+            <td>
+                {{details.ibm_email_id}}
+            </td>
+            <td>
+                {% if details.ibm_laptop_status == True %}
+                    Received
+                {% else %}
+                    Not Received
+                {%endif%}
+            </td>
+            
+            <td>
+                {{details.position_in_ibm}}
+            </td>
+            <td>
+                {{details.ibm_manager}}
+            </td>
+            <td>
+                {{details.designation_in_infinite}}
+            </td>
+            <td>
+                {% if details.status == True %}
+                    Active
+                {% else %}
+                    InActive
+                {%endif%}
+            </td>
+            <td>
+                {{details.date_of_joining_infinite}}
+            </td>
+            <td>
+                {{details.emp_location}}
+            </td>
+            </td>
+            <td>
+                {{details.experience}}
+            </td>
+            <td>
+                {{details.mobile_Number}}
+            </td>
+            <td>
+                {{details.skill_set}}
+            </td>
+            <td>
+                {{details.address}}
+            </td>
+            
+            <td>
+                {{details.admin_email}}
+            </td> 
+        </tr>
+    {% endfor %}
+    </table>

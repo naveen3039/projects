@@ -1,0 +1,7 @@
+2021-05-19 15:40:55,574 :: created 5 rows in a.csv file
+2021-05-19 15:40:55,575 :: created a copy of a.csv named as b.csv
+2021-05-19 15:40:55,575 :: created two rows in new csv file  named as 3.csv
+2021-05-19 15:40:55,598 :: merged two csv files b.csv and 3.csv
+2021-05-19 15:40:55,598 :: merged data converted to list
+2021-05-19 15:40:55,598 :: written output data to output.csv 
+2021-05-19 15:40:55,599 :: renamed output.csv to a.csv

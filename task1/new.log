@@ -1,0 +1,7 @@
+2021-05-18 16:26:26,184 :: Read the file and to the data variable
+2021-05-18 16:26:26,185 :: All lines splited and collected to a  list
+2021-05-18 16:26:26,185 :: intialising count and sum as a 0 
+2021-05-18 16:26:26,186 :: Byte is greater than 5000 so count = 1,sum =40310 
+2021-05-18 16:26:26,187 :: Byte is greater than 5000 so count = 2,sum =640620 
+2021-05-18 16:26:26,187 :: Byte is greater than 5000 so count = 3,sum =690930 
+2021-05-18 16:26:26,191 :: Written output to output file
