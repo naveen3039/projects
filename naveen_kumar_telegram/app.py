@@ -88,7 +88,7 @@ header=['Name','IP','CPU',"ram",'dateandtime']
 with open('data.csv','w')as f:
     logging.info("data.csv file created")
     writer = csv.DictWriter(f,fieldnames=header)
-    writer.writeheader()r
+    writer.writeheader()
 
 try:
     #Check server is working or not
