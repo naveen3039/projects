@@ -84,9 +84,11 @@ commands = [
     ]
 
 #creating a file 
+header=['Name','IP','CPU',"ram",'dateandtime']
 with open('data.csv','w')as f:
     logging.info("data.csv file created")
-    pass
+    writer = csv.DictWriter(f,fieldnames=header)
+    writer.writeheader()r
 
 try:
     #Check server is working or not

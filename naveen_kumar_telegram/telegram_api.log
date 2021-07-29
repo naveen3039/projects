@@ -1,5 +1,0 @@
-2021-07-29 11:52:01,448 :: data.csv file created
-2021-07-29 11:52:05,456 :: SERVER IS DOWN
-2021-07-29 11:52:06,189 :: {'ok': True, 'result': {'message_id': 91, 'from': {'id': 1903583544, 'is_bot': True, 'first_name': 'telegramapitesting', 'username': 'demoserver_bot'}, 'chat': {'id': -434163778, 'title': 'Telegram API testing', 'type': 'group', 'all_members_are_administrators': True}, 'date': 1627539726, 'text': '"The server is goes down"'}}
-2021-07-29 11:52:09,029 :: Email sent successfully
-2021-07-29 11:52:13,030 :: SERVER IS DOWN
